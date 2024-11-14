@@ -84,7 +84,7 @@ def convolute_2d(input_matrix, kernel_matrix):
     output_height, output_width = compute_output_size_2d(input_matrix, kernel_matrix)
     output_matrix = np.zeros((output_height, output_width))
 
-    kernal_height, kernal_width = compute_output_size_2d(kernel_matrix.shape)
+    kernal_height, kernal_width = kernel_matrix.shape
 
     for i in range(output_height):
         for j in range(output_width):
