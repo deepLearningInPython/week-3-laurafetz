@@ -82,7 +82,7 @@ def compute_output_size_2d(input_matrix, kernel_matrix):
 # -----------------------------------------------
 def convolute_2d(input_matrix, kernel_matrix):
     output_height, output_width = compute_output_size_2d(input_matrix, kernel_matrix)
-    output_matrix = np.zero((output_height, output_width))
+    output_matrix = np.zeros((output_height, output_width))
 
     kernal_height, kernal_width = compute_output_size_2d(kernel_matrix.shape)
 
